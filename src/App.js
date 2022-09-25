@@ -67,10 +67,10 @@ function Result({correct}) {
   return (
 
     <div className="result">
-        {(correct < 3) ? <h2>{correct} из {questions.length} Вы вообще не знаете феню... Стыдно?<p> <img style={{borderRadius:'30px'}} src={require('./zhopa.jpg')}/> </p></h2> :
-            (correct < 7) ? <h2>{correct} из {questions.length} Вы хорошо знаете феню! Разрешается погладить её один раз.
+        {(correct < 3) ? <h2>{correct} из {questions.length} Вы вообще не знаете Феню... Стыдно?<p> <img style={{borderRadius:'30px'}} src={require('./zhopa.jpg')}/> </p></h2> :
+            (correct < 7) ? <h2>{correct} из {questions.length} Вы хорошо знаете Феню! Разрешается погладить её один раз.
                             <p> <img style={{borderRadius:'30px'}} src={require('./fenya.png')}/> </p> </h2> :
-            <h2>{correct} из {questions.length} Вы лучше всех знаете феню, скорее всего вы её мама! &#128525; </h2>
+            <h2>{correct} из {questions.length} Вы лучше всех знаете Феню, скорее всего вы её мама! &#128525; </h2>
         }
       <a href='/'><button>Попробовать снова</button></a>
     </div>
